@@ -346,6 +346,30 @@ clrscr();
 } //close of animation
 } //close of user
 
+//to see ques
+
+
+void see()
+
+{
+clrscr();
+fstream f;
+char ch[100];
+f.open("game.dat",ios::binary|ios::in);
+quiz a;
+while(	f.read((char*)&a,sizeof(quiz)))
+{
+
+	cout<<"Question "<<a.quesno<<" :- "<<a.ques<<endl;
+	cout<<"options:-\t1." <<a.opta<<"\t\t\t2."<<a.optb<<"\n\t\t3."<<a.optc<<"\t\t\t4."<<a.optd<<endl;
+	cout<<"-------------------------------------------------------------------------------\n";
+
+}
+f.close();
+getch();
+}
+
+
 
 
 	void main()
