@@ -139,6 +139,33 @@ cout<<"                  ==                                    ==\n";
 }
 
 
+void credit()
+{
+clrscr();
+int x,y,z,q,c,s;
+
+for(x=1;x<=23;x++)
+{
+for(long a=1; a<=10000000;a++);
+clrscr();
+cout<<"\t\t\t MADE BY ::";
+cout<<"\n                 --------------------------------------\n " ;
+for(y=22;y>x;y--)
+{cout<<endl;}
+if(x==1||x==2)
+cout<<"\t\t\t\tAnkush Rawat";
+if(x==3||x==4)
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra";
+if(x==5||x==6)
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra\n\n\t\t\t\tPrashant Sharma";
+if(x>=7)
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra\n\n\t\t\t\tPrashant Sharma\n\n\t\t\t\tSiddarth";
+cout<<"\n                 ---------------------------------------";
+}
+getch();
+}
+
+
 
 
 	void main()
