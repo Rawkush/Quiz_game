@@ -81,6 +81,65 @@ f.close();
 }
 
 
+void wans()        // animation for wrong answers
+{
+clrscr();
+
+for(int i=0;i<3;i++)
+{
+clrscr();
+cout<<"Wrong Answer\n";
+for(long s=1; s<=10000000;s++);
+cout<<"                 ==                                       =="<<endl;
+cout<<"                   ==                                   ==\n";
+cout<<"                     ==                               ==\n";
+cout<<"                       ==                           ==\n";
+cout<<"                         ==                       ==\n";
+cout<<"                           ==                   ==\n";
+cout<<"                             ==               ==\n";
+cout<<"                               ==           ==\n";
+cout<<"                                 ==       ==\n";
+cout<<"                                  ==    ==\n";
+cout<<"                                    ====\n";
+cout<<"                                  ==    ==\n";
+cout<<"                                ==        ==\n";
+cout<<"                              ==            ==\n";
+cout<<"                            ==                ==\n";
+cout<<"                          ==                    ==\n";
+cout<<"                        ==                        ==\n";
+cout<<"                      ==                            ==\n";
+cout<<"                    ==                                ==\n";
+cout<<"                  ==                                    ==\n";
+
+for(long a=1; a<=10000000;a++);
+clrscr();
+cout<<"Wrong Answer\n";
+
+cout<<"                 ==                                       =="<<endl;
+cout<<"                   ==                                   ==\n";
+cout<<"                     ==                               ==\n";
+cout<<"                       ==                           ==\n";
+cout<<"                         ==                       ==\n";
+cout<<"                           ==                   ==\n";
+cout<<"                             ==               ==\n";
+cout<<"                               ==           ==\n";
+cout<<"                                 ==       ==\n";
+cout<<"                                  ==    ==\n";
+cout<<"                                    ====\n";
+cout<<"                                  ==    ==\n";
+cout<<"                                ==        ==\n";
+cout<<"                              ==            ==\n";
+cout<<"                            ==                ==\n";
+cout<<"                          ==                    ==\n";
+cout<<"                        ==                        ==\n";
+cout<<"                      ==                            ==\n";
+cout<<"                    ==                                ==\n";
+cout<<"                  ==                                    ==\n";
+}
+}
+
+
+
 
 	void main()
 	{
