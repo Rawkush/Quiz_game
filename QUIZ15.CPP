@@ -261,6 +261,31 @@ for(long a=1; a<=20000000;a++);
 }
 }
 
+void animation()               //name animation
+{
+clrscr();
+int x,y,p=73,z,q,c,s;
+for(x=1;x<=25;x++)
+{
+for(long a=1; a<=10000000;a++);
+clrscr();
+cout<<"\t\t\t\t PROJECT   FOR :: ";
+cout<<"\n\t\t\t===============================";
+
+for(y=1;y<=x;y++)
+{
+cout<<endl;}
+for(y=1;y<=x;y++)
+{
+cout<<"    ";}
+cout<<"Computer";
+for(s=1;s<=p;s++)
+{ cout<<"    ";  }
+p=p-2;
+cout<<"Science";
+}
+}
+
 
 
 	void main()
