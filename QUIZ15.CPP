@@ -7,6 +7,22 @@
 #include<stdlib.h>
 
 
+char admin[]={"kvs"};
+char password[]={"123"};
+int quesno=0;
+
+struct quiz
+{
+char ques[100];
+char opta[90];
+char optb[90];
+char optc[90];
+char optd[90];
+char coropt[99];
+int quesno;
+};
+
+
 	void main()
 	{
 	animation1();
