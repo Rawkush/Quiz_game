@@ -23,6 +23,65 @@ int quesno;
 };
 
 
+void file()           //creates a file stores the data of game
+{
+quiz start[5];
+strcpy(start[0].ques,"Super computer");
+
+strcpy(start[0].opta,"Param");
+strcpy(start[0].optb,"Wipro");
+strcpy(start[0].optc,"Amul");
+strcpy(start[0].optd,"Panda");
+strcpy(start[0].coropt,"a");
+start[0].quesno=1;
+
+strcpy(start[1].ques," Which of the Following is false about the computer");
+
+strcpy(start[1].opta," Very fast processing");
+strcpy(start[1].optb," stores the data");
+strcpy(start[1].optc," High IQ");
+strcpy(start[1].optd," Versatile machine");
+strcpy(start[1].coropt,"c");
+start[1].quesno=2;
+
+strcpy(start[2].ques,"Which is the smallest unit of memory");
+
+strcpy(start[2].opta,"Kilobyte");
+strcpy(start[2].optb,"Byte");
+strcpy(start[2].optc,"Megabyte");
+strcpy(start[2].optd,"Nibble");
+strcpy(start[2].coropt,"b");
+start[2].quesno=3;
+
+strcpy(start[3].ques,"Which is not a type of computer");
+
+strcpy(start[3].opta,"Analog");
+strcpy(start[3].optb,"Digital");
+strcpy(start[3].optc,"Hybrid");
+strcpy(start[3].optd,"Olson");
+strcpy(start[3].coropt,"d");
+start[3].quesno=4;
+
+strcpy(start[4].ques,"What is the full form of MB");
+
+strcpy(start[4].opta,"Mega Byte");
+strcpy(start[4].optb,"Meta Byte");
+strcpy(start[4].optc,"Mica Byte");
+strcpy(start[4].optd,"Mile Byte");
+strcpy(start[4].coropt,"a");
+start[4].quesno=5;
+
+fstream f;
+f.open("game.dat",ios::binary|ios::out|ios::app);
+for(int i=0;i<5;i++)
+{
+f.write((char*)&start[i],sizeof(quiz));      //writing data to the file
+}
+f.close();
+}
+
+
+
 	void main()
 	{
 	animation1();
