@@ -239,6 +239,30 @@ clrscr();
 
 
 
+void animation1()               //welcome animation
+{
+clrscr();
+for(int i=0;i<5;i++)
+{
+clrscr();
+
+cout<<"\n\n\n\n\n";
+cout<<"||            ||  ||=====   ||        ====      ====     ||\\  //||  ||======"<<endl;
+cout<<" ||          ||   ||        ||      ==        ==    ==   || \\// ||  ||      "<<endl;
+cout<<"  ||   ||   ||    ||====    ||      ==       ==      ==  ||     ||  ||====  "<<endl;
+cout<<"   || |||| ||     ||        ||      ==        ==    ==   ||     ||  ||      "<<endl;
+cout<<"    ||    ||      ||======  ||====    ====     =====     ||     ||  ||======"<<endl;
+cout<<"\n\n\n \t\t\t\t\t\t\t  TO :- QUIZ COMPETITION";
+for(long s=1; s<=20000000;s++);
+clrscr();
+cout<<"\n\n\n\n\n   \n\n\n\n\n";
+cout<<"\n\n\n \t\t\t\t\t\t\t  TO :- QUIZ COMPETITION";
+for(long a=1; a<=20000000;a++);
+}
+}
+
+
+
 	void main()
 	{
 	animation1();
