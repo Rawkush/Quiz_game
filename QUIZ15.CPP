@@ -390,6 +390,43 @@ for(long a=1; a<=20000000;a++);
 
 }
 
+void add()                    //fuction to add a question in quiz
+{
+quesno=0;
+int x=1;
+clrscr();
+fstream f;
+f.open("game.dat",ios::binary|ios::app);
+quiz aa;
+cout<<"\n\n\t\t\t TO ADD QUESTION INT THE QUIZ\n ";
+cout<<"============================================================================\n\n\n";
+cout<<"\n\n\nEnter the question\n:- ";
+gets(aa.ques);
+cout<<"Enter the option 1. ";
+gets(aa.opta);
+cout<<"Enter the option 2. ";
+gets(aa.optb);
+cout<<"Enter the option 3. ";
+gets(aa.optc);
+cout<<"Enter the option 4. ";
+gets(aa.optd);
+cout<<"Which option is correct:- ";
+gets(aa.coropt);
+count_ques();
+quesno++;
+aa.quesno=quesno;
+if(aa.quesno>0)
+{
+f.write((char*)&aa,sizeof(aa));         //writing question in binary file
+cout<<"Your Questions have been sucessfully added";
+}
+f.close();
+getch();
+}
+
+
+
+
 
 
 
