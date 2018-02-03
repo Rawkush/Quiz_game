@@ -369,6 +369,27 @@ f.close();
 getch();
 }
 
+void invalid()          // animation for invalid entry
+{
+clrscr();
+for(int i=0;i<5;i++)
+{
+cout<<"\n\n\n\n\n\n\n";
+
+cout<<"\t========   ==\\\\    ==  ==        ==   ====     ==    ========  ====   "<<endl;
+cout<<"\t   =       == \\\\   ==   ==      ==  ==    ==   ==       ==     ==  == "<<endl;
+cout<<"\t   =       ==  \\\\  ==    ==    ==   ========   ==       ==     ==   == "<<endl;
+cout<<"\t   =       ==   \\\\ ==     ==  ==    ==    ==   ==       ==     ==   == "<<endl;
+cout<<"\t========   ==    \\\\==      ====     ==    ==   =====  =======  ====== "<<endl;
+
+for(long s=1; s<=20000000;s++);
+clrscr();
+for(long a=1; a<=20000000;a++);
+}
+
+
+}
+
 
 
 
