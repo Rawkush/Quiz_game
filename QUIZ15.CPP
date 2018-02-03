@@ -166,6 +166,77 @@ getch();
 }
 
 
+void exitanim()           //animation while exiting game
+{
+clrscr();
+
+for(int i=0;i<5;i++)
+{
+cout<<"\n\n\n";
+cout<<"                      ====="<<endl;
+cout<<"                    ==      =="<<endl;
+cout<<"                   ==  O   O == "<<endl;
+cout<<"                   ==    u   ==    "<<endl;
+cout<<"                    ==      ==               " <<endl;
+cout<<"                       ====                       "<<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                    =============      \\|/      "<<endl;
+cout<<"                   ==            ==     ==     "<<endl;
+cout<<"                   ==            ==    ==      "<<endl;
+cout<<"                   ==            ==   ==        "<<endl;
+cout<<"                   ==            ==  ==         " <<endl;
+cout<<"                   ==            == ==          "<<endl;
+cout<<"                   ==             === ";
+cout<<"\n\n\t\t\t\t\tThanks For Playing";
+for(long s=1; s<=10000000;s++);
+clrscr();
+cout<<"\n\n\n";
+
+cout<<"                      ====="<<endl;
+cout<<"                    ==      =="<<endl;
+cout<<"                   ==  O   O == "<<endl;
+cout<<"                   ==    u   ==    "<<endl;
+cout<<"                    ==      ==               " <<endl;
+cout<<"                       ====                       "<<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                    =============   \\|/      "<<endl;
+cout<<"                   ==            ==  ==     "<<endl;
+cout<<"                   ==            ==  ==      "<<endl;
+cout<<"                   ==            ==  ==        "<<endl;
+cout<<"                   ==            ==  ==         " <<endl;
+cout<<"                   ==            ==  ==          "<<endl;
+cout<<"                   ==             === ";
+cout<<"\n\n\t\t\t\t\tThanks For Playing";
+for(long b=1; b<=10000000;b++);
+clrscr();
+cout<<"\n\n\n";
+
+cout<<"                      ====="<<endl;
+cout<<"                    ==      =="<<endl;
+cout<<"                   ==  O   O == "<<endl;
+cout<<"                   ==    u   ==    "<<endl;
+cout<<"                    ==      ==               " <<endl;
+cout<<"                       ====                       "<<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                        ==    "                   <<endl;
+cout<<"                    =============         \\|/      "<<endl;
+cout<<"                   ==            ==        ==     "<<endl;
+cout<<"                   ==            ==       ==      "<<endl;
+cout<<"                   ==            ==      ==        "<<endl;
+cout<<"                   ==            ==     ==         " <<endl;
+cout<<"                   ==            ==   ==          "<<endl;
+cout<<"                   ==             === ";
+cout<<"\n\n\t\t\t\t\tThanks For Playing";
+for(long h=1; h<=10000000;h++);
+clrscr();
+
+}
+
+
+}
+
 
 
 	void main()
