@@ -425,6 +425,90 @@ getch();
 }
 
 
+void del()             //function to delete question from quiz
+{
+int x,e,check=0;
+clrscr();
+fstream f;
+int qn,ch,q;
+quiz a;
+char c[90];
+cout<<"\n\n\t\t\t TO DELETE QUESTION FROM THE QUIZ \n";
+cout<<"============================================================================\n\n\n";
+cout<<"\t\nEnter your choice\n\n";
+cout<<"1.Enter the Question which you wants to delete : \n\n2.Enter the Question Number : ";
+cout<<"\n\n\n\n Enter Your Choice :- ";
+cin>>ch;
+if(ch==1)
+{
+clrscr();
+cout<<"\n\n\t\t\t TO DELETE QUESTION FROM THE QUIZ \n";
+cout<<"============================================================================\n\n\n";
+
+cout<<"Enter the question:- ";
+gets(c);
+}
+if(ch==2)
+{
+clrscr() ;
+cout<<"\n\n\t\t\t TO DELETE QUESTION FROM THE QUIZ \n";
+cout<<"============================================================================\n\n\n";
+cout<<"Enter the Question number of the question Which you wants to delete :- \n\n Question no :- ";
+cin>>q;
+}
+else
+if(ch!=1&&ch!=2)
+{
+invalid();
+exit(0);
+}
+f.open("game.dat",ios::binary|ios::in);
+fstream g;
+g.open("temp.dat",ios::binary|ios::out);
+while(f.read((char*)&a,sizeof(quiz)))
+{
+if(strcmpi(a.ques,c)==0||a.quesno==q)
+{
+check=1;
+qn=a.quesno;
+cout<<"\n\n Your question is ";
+cout<<"\n===============================================================\n";
+cout<<a.ques;
+cout<<"\n===============================================================\n";
+
+}
+else
+{
+
+if(check==1)
+{
+a.quesno=qn;
+qn++;
+}
+g.write((char*)&a,sizeof(quiz));
+}
+}
+f.close();
+g.close();
+remove("game.dat");
+rename("temp.dat","game.dat");
+
+if(check==1)
+{
+cout<<"\n\nYour Question have sucessfully deleted";
+}
+
+else
+if (check!=1)
+{
+invalid();
+exit(0);
+}
+getch();
+
+}
+
+
 
 
 
