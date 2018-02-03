@@ -509,6 +509,187 @@ getch();
 }
 
 
+// MODIFY
+
+
+void edit()
+{
+int x,e,check=0;
+clrscr();
+fstream f;
+quiz a;
+char c[90],m[90];
+int qn,ch;
+cout<<"\n\n\t\t\t TO MODIFY QUESTIONS IN THE QUIZ\n";
+cout<<"============================================================================\n\n\n";
+cout<<"\n 1. Type question number \n\n2. Type whole question\n\nENTER YOUR CHOICE :- " ;
+cin>>ch;
+
+if(ch==2)
+{
+clrscr();
+cout<<"\n\n\t\t\t\t TO MODIFY QUESTIONS IN THE QUIZ\n\n";
+cout<<"============================================================================\n\n\n";
+cout<<"Enter the Complete question which you wants to Modify\n\n :-";
+gets(c);
+}
+
+else
+if(ch==1)
+{
+clrscr();
+cout<<"\n\n\t\t\t\t TO MODIFY QUESTIONS IN THE QUIZ\n\n";
+cout<<"============================================================================\n\n\n";
+cout<<"\n\nEnter the Question Number :- ";
+cin>>qn;
+}
+
+else
+if(ch!=1&&ch!=2)
+{
+invalid();
+exit(0);
+}
+clrscr();
+f.open("game.dat",ios::binary|ios::in);
+fstream g;
+g.open("temp.dat",ios::binary|ios::out|ios::app);
+while(f.read((char*)&a,sizeof(quiz)))
+{
+	if(strcmpi(a.ques,c)==0||a.quesno==qn)
+	{
+	cout<<"\n\n Your question is ";
+	cout<<"\n===============================================================\n";
+	cout<<a.ques;
+	cout<<"\n===============================================================\n";
+	check=1;
+	cout<<"What you wants to modify";
+	cout<<"\n\n1.Question\n\n2.Option a\n\n3.Option b \n\n4.Option c \n\n5.Option d \n\n6.Edit correct option";
+	cout<<"\n\n YOUR CHOICE :- ";
+	cin>>e;
+	if(e==1)
+	{
+	check=1;
+	clrscr();
+	cout<<"YOUR QUESTION IS";
+	cout<<"\n===============================================================\n";
+	cout<<a.ques;
+	cout<<"\n===============================================================\n";
+	cout<<"Enter the modified question :- ";
+	gets(m);
+	strcpy(a.ques,m);
+	check=1;
+	}
+	if(e==2)
+	{
+	clrscr();
+	cout<<"YOUR OPTION IS";
+	cout<<"\n===============================================================\n";
+	cout<<a.opta;
+	cout<<"\n===============================================================\n";
+	check=1;
+
+	cout<<"Enter the modified option a :- ";
+	gets(m);
+	strcpy(a.opta,m);
+	}
+	if(e==3)
+	{
+	check=1;
+
+	clrscr();
+	cout<<"YOUR OPTION IS";
+	cout<<"\n===============================================================\n";
+	cout<<a.optb;
+	cout<<"\n===============================================================\n";
+
+	cout<<"Enter the modified option b :- ";
+	gets(m);
+	strcpy(a.optb,m);
+	}
+	if(e==4)
+	{
+	check=1;
+
+	clrscr();
+	cout<<"YOUR OPTION IS";
+	cout<<"\n===============================================================\n";
+	cout<<a.optc;
+	cout<<"\n===============================================================\n";
+
+	cout<<"Enter the modified option c :- ";
+	gets(m);
+	strcpy(a.optc,m);
+
+	}
+	if(e==5)
+	{
+	check=1;
+
+	clrscr();
+	cout<<"YOUR OPTION IS";
+	cout<<"\n===============================================================\n";
+	cout<<a.optd;
+	cout<<"\n===============================================================\n";
+
+	cout<<"Enter the modified option d :- ";
+	gets(m);
+
+	strcpy(a.optd,m);
+
+	}
+	if(e==6)
+	{
+	check=1;
+
+	clrscr();
+	cout<<"YOUR Correct option is";
+	cout<<"\n===============================================================\n";
+	cout<<a.coropt;
+	cout<<"\n===============================================================\n";
+
+	cout<<"Which option is correct:- ";
+	gets(m);
+	strcpy(a.coropt,m);
+	}
+	g.write((char*)&a,sizeof(quiz));
+
+	}
+
+else
+{
+
+if(strcmpi(a.ques,c)!=0&&a.quesno!=qn)
+{
+g.write((char*)&a,sizeof(quiz));
+}
+
+} //close of else
+
+} //close of while loop
+
+f.close();
+g.close();
+remove("game.dat");  //removing old file
+rename("temp.dat","game.dat");        //renaming new file
+if(check==1)
+{
+cout<<"\n\nSucessfully MODIFIED";
+}
+
+else
+
+if(check!=1)
+{
+invalid();
+exit(0);
+}
+
+
+getch();
+}
+
+
 
 
 
