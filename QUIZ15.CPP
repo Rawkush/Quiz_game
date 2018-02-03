@@ -269,7 +269,7 @@ for(x=1;x<=25;x++)
 {
 for(long a=1; a<=10000000;a++);
 clrscr();
-cout<<"\t\t\t\t PROJECT   FOR :: ";
+cout<<"\t\t\t\t PROJECT leader :: ";
 cout<<"\n\t\t\t===============================";
 
 for(y=1;y<=x;y++)
@@ -278,13 +278,73 @@ cout<<endl;}
 for(y=1;y<=x;y++)
 {
 cout<<"    ";}
-cout<<"Computer";
+cout<<"Ankush";
 for(s=1;s<=p;s++)
 { cout<<"    ";  }
 p=p-2;
-cout<<"Science";
+cout<<"Rawat";
 }
 }
+
+
+void user()
+{
+clrscr();
+cout<<"\t\tWelcome to the quiz competition game ";
+cout<<"\n\t=====================================================\n";
+int sc=0,c,j=0,h=0;
+char ch[90]={"\0"};
+fstream f;
+f.open("game.dat",ios::binary|ios::in);
+quiz a;
+while(f.read((char*)&a,sizeof(quiz)))
+{
+
+
+
+	if(strcmpi(a.ques,ch)==0) //for handlin error
+	{
+	break;
+	}
+
+	strcpy(ch,a.ques);
+	char ans[9];
+	cout<<"\t\t\t\t\t\t\t    (your score) = "<<sc<<endl;
+	cout<<a.ques<<endl<<endl;
+	cout<<"a:- "<<a.opta<<endl<<"b:- "<<a.optb<<endl;
+	cout<<"c:- "<<a.optc<<endl<<"d:- "<<a.optd<<endl;
+	cout<<"\n Your Option :- ";
+	h++;
+
+	cin>>ans;
+
+	c=strcmpi(ans,a.coropt);
+	if(c==0)
+	{
+	sc=sc+10;
+	cout<<"\n correct Answer";
+	getch();
+	clrscr();
+	}
+	else
+	{
+	j++;
+	wans();
+	getch();
+	clrscr();
+	}
+}
+f.close();
+for(int x=0;x<8;x++)
+{
+cout<<"\n\n\n\nNo. of question attempted = "<<h;
+cout<<"\n\n\n No. of wrong answers = "<<j;
+for(long d=1; d<=10000000;d++);
+cout<<"\n\n\n\n\n \t\t\t YOUR  SCORE  :-  "<<sc;
+for(long s=1; s<=10000000;s++);
+clrscr();
+} //close of animation
+} //close of user
 
 
 
