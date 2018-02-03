@@ -31,6 +31,15 @@
 	getch();
 	exit(0);
 	}
+	else
+	{
+	fstream f;
+	f.open("game.dat",ios::in|ios::binary);
+	if(!f)     //if file not present creates a file
+	{
+	file();
+	}
+
 
 	if(y==2) //for user
 	{
