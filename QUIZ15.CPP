@@ -4,7 +4,7 @@
 #include<conio.h>
 #include<string.h>
 #include<stdio.h>
-#include<dos.h>
+#include<dos.h> //for delay
 #include<stdlib.h>
 
 
@@ -197,7 +197,6 @@ delay(220);
 //for(long s=1; s<=10000000;s++);
 clrscr();
 cout<<"\n\n\n";
-
 cout<<"                      ====="<<endl;
 cout<<"                    ==      =="<<endl;
 cout<<"                   ==  O   O == "<<endl;
@@ -405,7 +404,7 @@ delay(220);
 void add()                    //fuction to add a question in quiz
 {
 quesno=0;
-int x=1;
+
 clrscr();
 fstream f;
 f.open("game.dat",ios::binary|ios::app);
@@ -435,10 +434,9 @@ f.close();
 getch();
 }
 
-
 void del()             //function to delete question from quiz
 {
-int x,e,check=0;
+int check=0;
 clrscr();
 fstream f;
 int qn,ch,q;
