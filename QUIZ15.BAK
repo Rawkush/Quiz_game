@@ -412,7 +412,6 @@ cout<<"Enter the option 4. ";
 gets(aa.optd);
 cout<<"Which option is correct:- ";
 gets(aa.coropt);
-count_ques();
 quesno++;
 aa.quesno=quesno;
 if(aa.quesno>0)

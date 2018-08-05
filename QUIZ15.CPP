@@ -4,6 +4,7 @@
 #include<conio.h>
 #include<string.h>
 #include<stdio.h>
+#include<dos.h>
 #include<stdlib.h>
 
 
@@ -89,7 +90,8 @@ for(int i=0;i<3;i++)
 {
 clrscr();
 cout<<"Wrong Answer\n";
-for(long s=1; s<=10000000;s++);
+delay(1000);
+//for(long s=1; s<=10000000;s++);
 cout<<"                 ==                                       =="<<endl;
 cout<<"                   ==                                   ==\n";
 cout<<"                     ==                               ==\n";
@@ -111,7 +113,8 @@ cout<<"                      ==                            ==\n";
 cout<<"                    ==                                ==\n";
 cout<<"                  ==                                    ==\n";
 
-for(long a=1; a<=10000000;a++);
+delay(1000);
+//for(long a=1; a<=10000000;a++);
 clrscr();
 cout<<"Wrong Answer\n";
 
@@ -146,7 +149,8 @@ int x,y,z,q,c,s;
 
 for(x=1;x<=23;x++)
 {
-for(long a=1; a<=10000000;a++);
+delay(1000);
+//for(long a=1; a<=10000000;a++);
 clrscr();
 cout<<"\t\t\t MADE BY ::";
 cout<<"\n                 --------------------------------------\n " ;
@@ -189,7 +193,8 @@ cout<<"                   ==            ==  ==         " <<endl;
 cout<<"                   ==            == ==          "<<endl;
 cout<<"                   ==             === ";
 cout<<"\n\n\t\t\t\t\tThanks For Playing";
-for(long s=1; s<=10000000;s++);
+delay(1000);
+//for(long s=1; s<=10000000;s++);
 clrscr();
 cout<<"\n\n\n";
 
@@ -209,7 +214,8 @@ cout<<"                   ==            ==  ==         " <<endl;
 cout<<"                   ==            ==  ==          "<<endl;
 cout<<"                   ==             === ";
 cout<<"\n\n\t\t\t\t\tThanks For Playing";
-for(long b=1; b<=10000000;b++);
+delay(1000);
+//for(long b=1; b<=10000000;b++);
 clrscr();
 cout<<"\n\n\n";
 
@@ -229,7 +235,8 @@ cout<<"                   ==            ==     ==         " <<endl;
 cout<<"                   ==            ==   ==          "<<endl;
 cout<<"                   ==             === ";
 cout<<"\n\n\t\t\t\t\tThanks For Playing";
-for(long h=1; h<=10000000;h++);
+delay(1000);
+//for(long h=1; h<=10000000;h++);
 clrscr();
 
 }
@@ -253,7 +260,8 @@ cout<<"  ||   ||   ||    ||====    ||      ==       ==      ==  ||     ||  ||===
 cout<<"   || |||| ||     ||        ||      ==        ==    ==   ||     ||  ||      "<<endl;
 cout<<"    ||    ||      ||======  ||====    ====     =====     ||     ||  ||======"<<endl;
 cout<<"\n\n\n \t\t\t\t\t\t\t  TO :- QUIZ COMPETITION";
-for(long s=1; s<=20000000;s++);
+delay(1000);
+//for(long s=1; s<=20000000;s++);
 clrscr();
 cout<<"\n\n\n\n\n   \n\n\n\n\n";
 cout<<"\n\n\n \t\t\t\t\t\t\t  TO :- QUIZ COMPETITION";
@@ -267,7 +275,8 @@ clrscr();
 int x,y,p=73,z,q,c,s;
 for(x=1;x<=25;x++)
 {
-for(long a=1; a<=10000000;a++);
+delay(1000);
+//for(long a=1; a<=10000000;a++);
 clrscr();
 cout<<"\t\t\t\t PROJECT leader :: ";
 cout<<"\n\t\t\t===============================";
@@ -382,9 +391,12 @@ cout<<"\t   =       ==  \\\\  ==    ==    ==   ========   ==       ==     ==   =
 cout<<"\t   =       ==   \\\\ ==     ==  ==    ==    ==   ==       ==     ==   == "<<endl;
 cout<<"\t========   ==    \\\\==      ====     ==    ==   =====  =======  ====== "<<endl;
 
-for(long s=1; s<=20000000;s++);
+delay(1000);
+//for(long s=1; s<=20000000;s++);
 clrscr();
-for(long a=1; a<=20000000;a++);
+
+delay(1000);
+//for(long a=1; a<=20000000;a++);
 }
 
 
