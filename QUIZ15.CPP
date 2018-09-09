@@ -159,11 +159,11 @@ for(y=22;y>x;y--)
 if(x==1||x==2)
 cout<<"\t\t\t\tAnkush Rawat";
 if(x==3||x==4)
-cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra";
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tClass 12th A";
 if(x==5||x==6)
-cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra\n\n\t\t\t\tPrashant Sharma";
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tClass 12th A\n\n\t\t\t\tRoll No:-9";
 if(x>=7)
-cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tSagar Kalra\n\n\t\t\t\tPrashant Sharma\n\n\t\t\t\tSiddarth";
+cout<<"\t\t\t\tAnkush Rawat\n\n\t\t\t\tClass 12th A\n\n\t\t\t\tRoll No :-9\n\n\t\t\t\tSOLO Project";
 cout<<"\n                 ---------------------------------------";
 }
 getch();
