@@ -5,6 +5,11 @@ This was my project for computer science 12th class, making a quiz game using c+
 Default username= kvs
 password=123
 ```
+
+# GamePlay
+ <img src="https://user-images.githubusercontent.com/25636146/45262980-de93cb80-b43e-11e8-99e4-7597a2cbfd09.gif" width="280" height="498" />
+
+
 Any contribution is welcomed :)
 if wants to improve see the issues and fork this repository and modify then create pull request :)
 
