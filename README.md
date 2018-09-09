@@ -7,7 +7,7 @@ password=123
 ```
 
 # GamePlay
- <img src="https://user-images.githubusercontent.com/25636146/45262980-de93cb80-b43e-11e8-99e4-7597a2cbfd09.gif" width="280" height="498" />
+ <img src="https://user-images.githubusercontent.com/25636146/45262980-de93cb80-b43e-11e8-99e4-7597a2cbfd09.gif"  />
 
 
 Any contribution is welcomed :)
