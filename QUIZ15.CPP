@@ -27,7 +27,7 @@ int quesno;
 void file()           //creates a file stores the data of game
 {
 quiz start[5];
-strcpy(start[0].ques,"Super computer");
+strcpy(start[0].ques,"Super Computer");
 
 strcpy(start[0].opta,"Param");
 strcpy(start[0].optb,"Wipro");
@@ -36,7 +36,7 @@ strcpy(start[0].optd,"Panda");
 strcpy(start[0].coropt,"a");
 start[0].quesno=1;
 
-strcpy(start[1].ques," Which of the Following is false about the computer");
+strcpy(start[1].ques," Which of the Following is false about the Computer");
 
 strcpy(start[1].opta," Very fast processing");
 strcpy(start[1].optb," stores the data");
@@ -48,8 +48,8 @@ start[1].quesno=2;
 strcpy(start[2].ques,"Which is the smallest unit of memory");
 
 strcpy(start[2].opta,"Kilobyte");
-strcpy(start[2].optb,"Byte");
-strcpy(start[2].optc,"Megabyte");
+strcpy(start[2].optb,"Byte  ");
+strcpy(start[2].optc,"Megabyte  ");
 strcpy(start[2].optd,"Nibble");
 strcpy(start[2].coropt,"b");
 start[2].quesno=3;
